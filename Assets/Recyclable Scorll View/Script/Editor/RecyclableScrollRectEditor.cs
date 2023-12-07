@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 namespace Tori.UI
 {
-    [CustomEditor(typeof(OptimizedScrollRect), true)]
+    [CustomEditor(typeof(RecyclableScrollRect), true)]
     [CanEditMultipleObjects]
-    public class OptimizedScrollRectEditor : Editor
+    public class RecyclableScrollRectEditor : Editor
     {
         SerializedProperty m_Content;
         SerializedProperty m_MovementType;
@@ -32,12 +32,12 @@ namespace Tori.UI
         AnimBool m_ShowElasticity;
         AnimBool m_ShowDecelerationRate;
 
-        OptimizedScrollRect _script;
+        RecyclableScrollRect _script;
         private bool _isHorizontal = false;
 
         protected virtual void OnEnable()
         {
-            _script = (OptimizedScrollRect)target;
+            _script = (RecyclableScrollRect)target;
             m_Content = serializedObject.FindProperty("m_Content");
             m_Horizontal = serializedObject.FindProperty("m_Horizontal");
             m_Vertical = serializedObject.FindProperty("m_Vertical");

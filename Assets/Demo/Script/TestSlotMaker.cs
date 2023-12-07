@@ -11,8 +11,8 @@ namespace Tori.UI
         [SerializeField] private GameObject _slotPrefab;
         [SerializeField] private Transform[] _contents;
         [SerializeField] private int _slotCount;
-        [SerializeField] private OptimizedScrollRect _verticalScrollRect;
-        [SerializeField] private OptimizedScrollRect _horizontalScrollRect;
+        [SerializeField] private RecyclableScrollRect _verticalScrollRect;
+        [SerializeField] private RecyclableScrollRect _horizontalScrollRect;
 
         private void Awake()
         {

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Tori.UI
 {
-    public class OptimizedScrollRect : ScrollRect
+    public class RecyclableScrollRect : ScrollRect
     {
         [SerializeField] private GameObject _slotPrefab;
         [SerializeField] private GridLayoutGroup _gridLayoutGroup;

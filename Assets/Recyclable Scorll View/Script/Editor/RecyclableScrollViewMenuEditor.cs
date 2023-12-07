@@ -8,12 +8,12 @@ namespace Tori.UI
     /// <summary>
     /// Make a menu item to create a scroll view.
     [ExecuteInEditMode]
-    public static class OptimizedScrollViewMenuEditor
+    public static class RecyclableScrollViewMenuEditor
     {
         // The path to the prefab to instantiate for the scroll view.
-        const string PrefabPath = "Assets/Optimized Scorll View/Prefab/Optimized Scroll View.prefab";
+        const string PrefabPath = "Assets/Recyclable Scorll View/Prefab/Recyclable Scroll View.prefab";
 
-        [MenuItem("GameObject/UI/Optimized Scroll View")]
+        [MenuItem("GameObject/UI/Recyclable Scroll View")]
         private static void CreateRecyclableScrollView()
         {
             GameObject selected = Selection.activeGameObject;
@@ -27,13 +27,13 @@ namespace Tori.UI
 
             GameObject asset = AssetDatabase.LoadAssetAtPath(PrefabPath, typeof(GameObject)) as GameObject;
             GameObject item = Object.Instantiate(asset);
-            item.name = "Optimized Scroll View";
+            item.name = "Recyclable Scroll View";
 
             item.transform.SetParent(selected.transform);
             item.transform.localPosition = Vector3.zero;
 
             Selection.activeGameObject = item;
-            Undo.RegisterCreatedObjectUndo(item, "Create Optimized Scroll view");
+            Undo.RegisterCreatedObjectUndo(item, "Create Recyclable Scroll view");
         }
     }
 

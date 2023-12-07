@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 164333416}
   - component: {fileID: 164333415}
   m_Layer: 5
-  m_Name: Optimized Scroll View Horiziontal
+  m_Name: Recyclable Scroll View Horiziontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -910,9 +910,8 @@ GameObject:
   - component: {fileID: 1387362966}
   - component: {fileID: 1387362965}
   - component: {fileID: 1387362964}
-  - component: {fileID: 1387362967}
   m_Layer: 5
-  m_Name: Optimized Scroll View Vertical
+  m_Name: Recyclable Scroll View Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1012,21 +1011,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387362962}
   m_CullTransparentMesh: 1
---- !u!114 &1387362967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387362962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a8332eaf2f7dc14f8a0183918fff930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollRect: {fileID: 0}
-  fps: 0
-  count: 0
 --- !u!1 &1393849567
 GameObject:
   m_ObjectHideFlags: 0
